@@ -67,3 +67,39 @@ Widget defaultFormField({
         border: OutlineInputBorder(),
       ),
     );
+
+Widget buildTaskItem(Map model) => Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Row(
+        children: [
+          CircleAvatar(
+            radius: 40.0,
+            child: Text(
+              '${model['date']}',
+            ),
+          ),
+          SizedBox(
+            width: 20.0,
+          ),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '${model['title']}',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16.0,
+                ),
+              ),
+              Text(
+                '${model['time']}',
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
