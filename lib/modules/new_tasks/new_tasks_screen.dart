@@ -1,5 +1,5 @@
-import 'package:daily_tasks/shered/components/components.dart';
-import 'package:daily_tasks/shered/components/constants.dart';
+import 'package:daily_tasks/sheared/components.dart';
+import 'package:daily_tasks/sheared/constants.dart';
 import 'package:flutter/material.dart';
 
 class NewTasksScreen extends StatelessWidget {
